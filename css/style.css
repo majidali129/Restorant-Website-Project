@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Josefin+Sans:wght@200;300;400;500&family=Montserrat:wght@200;300;400;700&family=PT+Serif&family=Poppins:wght@200;300&family=Roboto:wght@500&display=swap');
+/* font-family: 'Roboto', sans-serif,Montserrat','Josefin Sans'; */
+
+
+
+/** 
+ *! custom css reset
+ **/
+
+
+*,
+::after,
+::before {
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif, Montserrat',' Josefin Sans';
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/** 
+*! Css variables
+**/
+:root {
+    --mHeading-fz:4rem;
+    --mHeading-fw:700;
+    --sHeading-fz:4.5rem;
+    --sHeading-fw:600;
+    --sHeading-color:#ffb733;
+    --mbtn-bg:#ffa600da;
+    --mbtn-clr:#fff;
+    --mbtn-fz:1.9rem;
+    --mpara-color:rgba(255, 255, 255, 0.747);
+    --spara-color:rgba(255, 255, 255, 0.747);
+    --para-fz:1.4rem;
+    --transition:all 0.3s ease-in-out;
+    --box-shadow:0px 2px 4.2px rgba(0, 0, 0, 0.404);
+}
+
+
+.para{
+    color: var(--mpara-color);
+    letter-spacing: 0.02em;
+    margin-top: 1em;
+    font-size: var(--para-fz);
+    text-align: center;
+    line-height: 1.5em;
+}
+.mainBtn {
+    padding: 0.5em 1.2em;
+    border-radius: 8px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    outline: none;
+    box-shadow: none;
+    background: var(--mbtn-bg);
+    color: var(--mbtn-clr);
+    font-size: var(--mbtn-fz);
+    border: none;
+    transition: var(--transition);
+}
+
+.mainBtn:hover {
+    background: transparent;
+    border: 2.8px solid #041104;
+    cursor: pointer;
+    color: #ffa600ef;
+    font-weight: 700;
+}
+.section-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0000006e;
+    margin-bottom: 3.5rem;
+}
+
+/* ############## Header Section ############  */
+/* ############ nav start ###############  */
+.nav {
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav .logo {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.507);
+    font-style: italic;
+    cursor: pointer;
+}
+
+.nav .logo span {
+    color: orange;
+}
+.nav .menuList{
+    display: flex;
+}
+
+.nav .listItems {
+    list-style-type: none;
+    margin-right: 1.5em;
+}
+
+.nav .listItems .links {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.507);
+    transition: var(--transition);
+}
+
+.nav .listItems .links:hover {
+    color: #ffa600d7;
+    border-bottom: 0.2rem solid #ffa600d7;
+}
+
+/* ######### Nav section end E###########*/
+
+/* ########### Banner section start ########## */
+#banner-container {
+    width: 100%;
+    background-image: linear-gradient(rgba(13, 13, 14, 0.795), rgba(8, 4, 19, 0.685)), url("/images/home.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-section .banner {
+    padding: 17em;
+}
+.mainHeading{
+    font-size: var(--mHeading-fz);
+    font-weight: var(--mHeading-fw);
+    letter-spacing: 0.02em;
+    margin-left: 2em;
+    color: rgba(255, 255, 255, 0.767);
+    font-style: italic;
+    text-align: center;
+}
+.mainHeading span{
+    font-style: italic;
+    color: #ffa600da;
+}
+
+/* ####################### Banner section End ######################  */
+
+/* #################### About Section Start ####################  */
+.about{
+    margin-top: 5.5em;
+}
+.secondary-heading{
+    font-size: var(--sHeading-fz);
+    font-weight: var(--sHeading-fw) ;
+    letter-spacing: 0.02em;
+    color:var(--sHeading-color);
+
+}
+.about-section{
+    /* border: 1px solid red; */
+    position: relative;
+}
+.aboutText{
+    padding: 3em 5em;
+    background-color: #242323;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    transition: var(--transition);
+    /* position: absolute;
+    left: -100%; */
+
+}
+.aboutText .para{
+    font-size: 1.8rem;
+}
+.aboutImg{
+    background-image: url('/images/about2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: var(--transition);
+    /* position: absolute;
+    right: -100%;*/
+}
+
+/* ################## About Section End ####################  */
+
+
+/* ################## Food Section Start ####################  */
+.foods{
+    margin-top: 5.5em;
+    /* border: 2px solid red; */
+}
+.food-section .food{
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
+}
+
+
+.food-item{
+    position:relative;
+}
+.food-section .food-item .food1{
+    /* border: 1px solid black; */
+    background-image: url("/images/biryani.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:all 0.4s ease;
+}
+.food-section .food-item .food2{
+    /* border: 1px solid yellowgreen; */
+    background-image: url("/images/burger.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transition: var(--transition); */
+    transition:all 0.4s ease;
+
+}
+.food-section .food-item .food3{
+    /* border: 1px solid orangered; */
+    background-image: url("/images/chicken\ \(2\).jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transition: var(--transition); */
+    transition:all 0.4s ease;
+
+}
+.food-section .food-item .food4{
+    /* border: 1px solid blue; */
+    background-image: url("/images/salad.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transition: var(--transition); */
+    transition:all 0.4s ease;
+
+}
+.content-box{
+    position: absolute;
+    /* border: 1px solid green; */
+    width: 80%;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50% , -50%);
+    transition: var(--transition);
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.food-item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    /* border: 1px solid black; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+.food-item:hover::after{
+    background-color: #000000ab;
+}
+.food-item:hover .content-box{
+    left: 50%;
+    opacity: 1;
+}
+.content-box .food-text{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.content-box .order-btn{
+    display: inline-block;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    outline: none;
+    padding: 0.2em 1.3em;
+    border-radius: 4px;
+    background-color:#ffb833cb;
+    transition: var(--transition);
+}
+.content-box .order-btn:hover{
+    /* border: 1.4px solid #ffb833 ; */
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+.foodName{
+    margin-top: 1em;
+    font-size: 1.8rem;
+}
+
+/* ################## Food Section End ####################  */
+
+/* ################## Chef Section Start ####################  */
+.chefs{
+    /* border: 3px solid green; */
+    margin-top: 5.5em;
+}
+.chef-section{
+    width: 100%;
+    padding: 2em;
+    /* border: 1px solid red; */
+}
+/*
+ .chef-section .chef{
+     width: 250px;
+    height: 250px; 
+     border: 1px solid black; 
+} */
+.chef-section figure{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.chef-section figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+    /* object-fit: cover; */
+}
+.chef-section figure img:hover{
+    transform: scale(1.03);
+}
+.chef-section .chef-data .chef-name{
+    font-weight: bold;
+}
+.chef-section .chef-data p{
+    font-size: 1.1rem;
+}
+/* ################## Chef Section End ####################  */
+
+/* ################# Services Section Start ##############  */
+.services{
+    /* border: 1px solid red; */
+    margin-top: 5.5em;
+}
+.services-section .service{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 200px;
+}
+.services-section .service .service-img{
+    width: 100%;
+    height: 100%;
+}
+.services-section .service .service-img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+.services-section .service .service-img img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.services-section .service .service-name{
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* width: fit-content; */
+    background-color:#ffa6004f;
+    /* color: rgba(255, 166, 0, 0.679); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
